@@ -1,0 +1,227 @@
+[2022-04-12 15:35:04,391] EN911695/INFO/locust.main: Run time limit set to 10 seconds
+[2022-04-12 15:35:04,392] EN911695/INFO/locust.main: Starting Locust 2.8.5
+[2022-04-12 15:35:04,395] EN911695/INFO/locust.runners: Ramping to 1 users at a rate of 1.00 per second
+[2022-04-12 15:35:04,396] EN911695/INFO/locust.runners: All users spawned: {"WebsiteUser": 1} (1 total users)
+[2022-04-12 15:35:04,794] EN911695/ERROR/locust.user.task: [Errno Expecting value] Internal Server Error: 0
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Python\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 319, in run
+    self.execute_next_task()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 344, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 454, in execute_task
+    task(self.user).run()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 304, in run
+    self.on_start()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\locustscripts\basic_api.py", line 23, in on_start
+    json_response_dict = resp.json()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+[2022-04-12 15:35:13,170] EN911695/ERROR/locust.user.task: [Errno Expecting value] Internal Server Error: 0
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Python\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 319, in run
+    self.execute_next_task()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 344, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 454, in execute_task
+    task(self.user).run()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 304, in run
+    self.on_start()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\locustscripts\basic_api.py", line 23, in on_start
+    json_response_dict = resp.json()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+[2022-04-12 15:35:13,883] EN911695/INFO/locust.main: --run-time limit reached. Stopping Locust
+[2022-04-12 15:35:13,884] EN911695/INFO/locust.main: Shutting down (exit code 1)
+[2022-04-12 15:35:31,088] EN911695/INFO/locust.main: Run time limit set to 10 seconds
+[2022-04-12 15:35:31,088] EN911695/INFO/locust.main: Starting Locust 2.8.5
+[2022-04-12 15:35:31,091] EN911695/INFO/locust.runners: Ramping to 1 users at a rate of 1.00 per second
+[2022-04-12 15:35:31,091] EN911695/INFO/locust.runners: All users spawned: {"WebsiteUser": 1} (1 total users)
+[2022-04-12 15:35:31,420] EN911695/ERROR/locust.user.task: [Errno Expecting value] Internal Server Error: 0
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Python\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 319, in run
+    self.execute_next_task()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 344, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 454, in execute_task
+    task(self.user).run()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 304, in run
+    self.on_start()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\locustscripts\basic_api.py", line 23, in on_start
+    json_response_dict = resp.json()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+[2022-04-12 15:35:40,052] EN911695/ERROR/locust.user.task: [Errno Expecting value] Internal Server Error: 0
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Python\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 319, in run
+    self.execute_next_task()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 344, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 454, in execute_task
+    task(self.user).run()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 304, in run
+    self.on_start()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\locustscripts\basic_api.py", line 23, in on_start
+    json_response_dict = resp.json()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+[2022-04-12 15:35:40,679] EN911695/INFO/locust.main: --run-time limit reached. Stopping Locust
+[2022-04-12 15:35:40,681] EN911695/INFO/locust.main: Shutting down (exit code 1)
+[2022-04-12 15:36:33,199] EN911695/INFO/locust.main: Run time limit set to 10 seconds
+[2022-04-12 15:36:33,199] EN911695/INFO/locust.main: Starting Locust 2.8.5
+[2022-04-12 15:36:33,202] EN911695/INFO/locust.runners: Ramping to 1 users at a rate of 1.00 per second
+[2022-04-12 15:36:33,202] EN911695/INFO/locust.runners: All users spawned: {"WebsiteUser": 1} (1 total users)
+[2022-04-12 15:36:33,584] EN911695/ERROR/locust.user.task: [Errno Expecting value] Internal Server Error: 0
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Python\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 319, in run
+    self.execute_next_task()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 344, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 454, in execute_task
+    task(self.user).run()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 304, in run
+    self.on_start()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\locustscripts\basic_api.py", line 23, in on_start
+    json_response_dict = resp.json()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+[2022-04-12 15:36:42,474] EN911695/ERROR/locust.user.task: [Errno Expecting value] Internal Server Error: 0
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Python\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 319, in run
+    self.execute_next_task()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 344, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 454, in execute_task
+    task(self.user).run()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 304, in run
+    self.on_start()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\locustscripts\basic_api.py", line 23, in on_start
+    json_response_dict = resp.json()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+[2022-04-12 15:36:42,802] EN911695/INFO/locust.main: --run-time limit reached. Stopping Locust
+[2022-04-12 15:36:42,804] EN911695/INFO/locust.main: Shutting down (exit code 1)
+[2022-04-12 15:38:22,853] EN911695/INFO/locust.main: Run time limit set to 10 seconds
+[2022-04-12 15:38:22,854] EN911695/INFO/locust.main: Starting Locust 2.8.5
+[2022-04-12 15:38:22,857] EN911695/INFO/locust.runners: Ramping to 1 users at a rate of 1.00 per second
+[2022-04-12 15:38:22,857] EN911695/INFO/locust.runners: All users spawned: {"WebsiteUser": 1} (1 total users)
+[2022-04-12 15:38:23,268] EN911695/ERROR/locust.user.task: [Errno Expecting value] Internal Server Error: 0
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 910, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Python\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 319, in run
+    self.execute_next_task()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 344, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 454, in execute_task
+    task(self.user).run()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\locust\user\task.py", line 304, in run
+    self.on_start()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\locustscripts\basic_api.py", line 23, in on_start
+    json_response_dict = resp.json()
+  File "C:\Users\lavaldez\Documents\Project of guide\Phyton\venv\lib\site-packages\requests\models.py", line 917, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: [Errno Expecting value] Internal Server Error: 0
+
+[2022-04-12 15:38:32,422] EN911695/INFO/locust.main: --run-time limit reached. Stopping Locust
+[2022-04-12 15:38:32,427] EN911695/INFO/locust.main: Shutting down (exit code 1)
